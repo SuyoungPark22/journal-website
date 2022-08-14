@@ -36,15 +36,37 @@ function Article(props){
             <h2>This is main text title.</h2>
             <p>This is main text description.</p>
           </div>
-          <div class="main-image">
-            This is main image.
-          </div>
+          <img class="main-image" src={props.main_img_src} alt="main"></img>
         </article>
-        <div class="list">
-          This is list article.
+        <div id="list-grid">
+          <List title="This is list 1 text title." description="This is list 1 text description. This is list 1 text description. This is list 1 text description. This is list 1 text description. This is list 1 text description." img_src="img/list_image_1.JPG" author="Suyoung Park" date="14 Aug 2022"></List>
+          <List title="This is list 1 text title." description="This is list 1 text description. This is list 1 text description. This is list 1 text description. This is list 1 text description. This is list 1 text description." img_src="img/list_image_1.JPG" author="Suyoung Park" date="14 Aug 2022"></List>
+          <List title="This is list 1 text title." description="This is list 1 text description. This is list 1 text description. This is list 1 text description. This is list 1 text description. This is list 1 text description." img_src="img/list_image_1.JPG" author="Suyoung Park" date="14 Aug 2022"></List>
+          <List title="This is list 1 text title." description="This is list 1 text description. This is list 1 text description. This is list 1 text description. This is list 1 text description. This is list 1 text description." img_src="img/list_image_1.JPG" author="Suyoung Park" date="14 Aug 2022"></List>
+          <List title="This is list 1 text title." description="This is list 1 text description. This is list 1 text description. This is list 1 text description. This is list 1 text description. This is list 1 text description." img_src="img/list_image_1.JPG" author="Suyoung Park" date="14 Aug 2022"></List>
         </div>
       </div>
     </div>
+  );
+}
+
+function List(props){
+  return (
+    <div class="List">
+      <div id="list-subgrid">
+        <img class="list-image" src={props.img_src} alt={props.title}></img>
+        <h3>{props.title}</h3>
+        <p class="list-description">{props.description}</p>
+        <p class="list-author">{props.author}</p>
+        <p class="list-date">{props.date}</p>
+      </div>
+    </div>
+  );
+}
+
+function Footer(props){
+  return (
+    <div class="Footer"></div>
   );
 }
 
@@ -53,7 +75,8 @@ function App() {
     <div class="App">
       <Header></Header>
       <Nav></Nav>
-      <Article></Article>
+      <Article main_img_src="img/main_image.png"></Article>
+      <Footer></Footer>
     </div>
   );
 }
