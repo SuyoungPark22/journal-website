@@ -4,7 +4,9 @@ import './App.css';
 function Header(props){
   return (
     <div class="Header">
-      <h1>Researchers' Society</h1>
+      <div class="container">
+        <h1>Researchers' Society</h1>
+      </div>
     </div>
   );  
 }
@@ -12,10 +14,14 @@ function Header(props){
 function Nav(props){
   return (
     <div class="Nav">
-      <div id="grid">
-        <p class="nav-element">Explore content</p>
-        <p class="nav-element">About us</p>
-        <p class="nav-element">Members</p>
+      <div class="nav-maxwidth">
+        <div class="container">
+          <div id="nav-grid">
+            <p class="nav-element">Explore content</p>
+            <p class="nav-element">About us</p>
+            <p class="nav-element">Members</p>
+          </div>
+        </div>
       </div>
     </div>
   );
@@ -24,11 +30,19 @@ function Nav(props){
 function Article(props){
   return (
     <div class="Article">
-      <div class="Main Article">
-        asdf
-      </div>
-      <div class="List Article">
-        asdf
+      <div class="container">
+        <article id="main-grid">
+          <div class="main-text">
+            <h2>This is main text title.</h2>
+            <p>This is main text description.</p>
+          </div>
+          <div class="main-image">
+            This is main image.
+          </div>
+        </article>
+        <div class="list">
+          This is list article.
+        </div>
       </div>
     </div>
   );
@@ -39,6 +53,7 @@ function App() {
     <div class="App">
       <Header></Header>
       <Nav></Nav>
+      <Article></Article>
     </div>
   );
 }
