@@ -39,11 +39,11 @@ function Article(props){
           <img class="main-image" src={props.main_img_src} alt="main"></img>
         </article>
         <div id="list-grid">
-          <List title="This is list 1 text title." description="This is list 1 text description. This is list 1 text description. This is list 1 text description. This is list 1 text description. This is list 1 text description." img_src="img/list_image_1.JPG" author="Suyoung Park" date="14 Aug 2022"></List>
-          <List title="This is list 1 text title." description="This is list 1 text description. This is list 1 text description. This is list 1 text description. This is list 1 text description. This is list 1 text description." img_src="img/list_image_1.JPG" author="Suyoung Park" date="14 Aug 2022"></List>
-          <List title="This is list 1 text title." description="This is list 1 text description. This is list 1 text description. This is list 1 text description. This is list 1 text description. This is list 1 text description." img_src="img/list_image_1.JPG" author="Suyoung Park" date="14 Aug 2022"></List>
-          <List title="This is list 1 text title." description="This is list 1 text description. This is list 1 text description. This is list 1 text description. This is list 1 text description. This is list 1 text description." img_src="img/list_image_1.JPG" author="Suyoung Park" date="14 Aug 2022"></List>
-          <List title="This is list 1 text title." description="This is list 1 text description. This is list 1 text description. This is list 1 text description. This is list 1 text description. This is list 1 text description." img_src="img/list_image_1.JPG" author="Suyoung Park" date="14 Aug 2022"></List>
+          <List title="This is list 1 text title." description="This is list 1 text description. This is list 1 text description. This is list 1 text description. This is list 1 text description. This is list 1 text description." img_src="data/list_image_1.JPG" author="Suyoung Park" date="14 Aug 2022"></List>
+          <List title="This is list 1 text title." description="This is list 1 text description. This is list 1 text description. This is list 1 text description. This is list 1 text description. This is list 1 text description." img_src="data/list_image_1.JPG" author="Suyoung Park" date="14 Aug 2022"></List>
+          <List title="This is list 1 text title." description="This is list 1 text description. This is list 1 text description. This is list 1 text description. This is list 1 text description. This is list 1 text description." img_src="data/list_image_1.JPG" author="Suyoung Park" date="14 Aug 2022"></List>
+          <List title="This is list 1 text title." description="This is list 1 text description. This is list 1 text description. This is list 1 text description. This is list 1 text description. This is list 1 text description." img_src="data/list_image_1.JPG" author="Suyoung Park" date="14 Aug 2022"></List>
+          <List title="This is list 1 text title." description="This is list 1 text description. This is list 1 text description. This is list 1 text description. This is list 1 text description. This is list 1 text description." img_src="data/list_image_1.JPG" author="Suyoung Park" date="14 Aug 2022"></List>
         </div>
       </div>
     </div>
@@ -71,11 +71,13 @@ function Footer(props){
 }
 
 function App() {
+  // const data = import()
+
   return (
     <div class="App">
       <Header></Header>
       <Nav></Nav>
-      <Article main_img_src="img/main_image.png"></Article>
+      <Article main_img_src="data/main_image.png"></Article>
       <Footer></Footer>
     </div>
   );
